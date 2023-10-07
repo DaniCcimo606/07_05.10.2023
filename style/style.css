@@ -96,7 +96,7 @@ body {
   padding: 0 0 30px 0;
   font-weight: 500;
 }
-.footer .footer__menu-wrap .footer__menu--list .footer__menu--item h3 p {
+.footer .footer__menu-wrap .footer__menu--list .footer__menu--item h3 span {
   flex: 23px;
 }
 .footer .footer__menu-wrap .footer__menu--list .footer__menu--item .footer__menu--list--inner {
