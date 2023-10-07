@@ -3,7 +3,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        background-color: #EFEFEF;
+        background-color: $secondary-color;
         .header__nav--list {
             display: flex;
             gap: 30px;
@@ -23,29 +23,31 @@
             margin-bottom: 0;
         }
     }
-    .container {
-        .header__item {
+    .header__item {
+        .container {
             .header__info {
                 display: flex;
                 justify-content: space-between;
                 .header__info--item {
                     display: flex;
+                    align-items: center;
                     font-size: 0;
                     h1 {
                         padding-left: 20px;
                         font-size: 36px;
                         text-transform: uppercase;
                         font-weight: 700;
-                        line-height: 80px;
                         letter-spacing: 3.5px;
-                        color: #F13C6E;
+                        color: $primary-color;
                     }
                     .header__info--link {
                         padding-right: 40px;
                         font-size: 16px;
                         text-decoration: none;
-                        line-height: 80px;
                         color: #000;
+                    }
+                    .header__info--btn {
+                        @include button($primary-color, $dark, $light);
                     }
                 }
             }
@@ -54,7 +56,7 @@
     .header__menu {
         display: flex;
         justify-content: center;
-        border-top: 1px solid #EFEFEF;
+        border-top: 1px solid $secondary-color;
         .header__menu--list {
             display: flex;
             gap: 40px;
