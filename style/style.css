@@ -60,6 +60,8 @@ body {
   font-size: 14px;
   color: #000;
   background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 .header .header__menu {
   display: flex;
@@ -76,6 +78,164 @@ body {
 .header .header__menu .header__menu--list .header__menu--item .header__menu--link {
   text-decoration: none;
   color: #000;
+}
+
+.beauty .main {
+  background-color: #EFEFEF;
+}
+.beauty .main .main__item .main__hero {
+  position: relative;
+}
+.beauty .main .main__item .main__hero .main__hero--box {
+  width: 15%;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 21%;
+  display: flex;
+  flex-direction: column;
+}
+.beauty .main .main__item .main__hero .main__hero--box h2 {
+  font-size: 48px;
+  color: #fff;
+}
+.beauty .main .main__item .main__hero .main__hero--box span {
+  padding: 50px 0 30px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+.beauty .main .main__item .main__hero .main__hero--box a {
+  width: -moz-min-content;
+  width: min-content;
+  letter-spacing: 0.7px;
+  padding: 10px 58px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f13c6e;
+  text-decoration: none;
+  cursor: pointer;
+}
+.beauty .main .container .main__item .main__leader {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.beauty .main .container .main__item .main__leader h2 {
+  padding: 80px 0 40px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.beauty .main .container .main__item .main__leader .main__leader--box-wrap {
+  gap: 30px;
+  display: flex;
+}
+.beauty .main .container .main__item .main__leader .main__leader--box-wrap .main__leader--box {
+  width: 25%;
+  padding: 25px 0;
+  gap: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.beauty .main .container .main__item .main__leader .main__leader--box-wrap .main__leader--box img {
+  width: 125px;
+  height: 165px;
+}
+.beauty .main .container .main__item .main__leader .main__leader--box-wrap .main__leader--box .main__leader--description {
+  padding: 0 30px;
+  text-align: center;
+  line-height: 20px;
+}
+.beauty .main .container .main__item .main__leader .main__leader--box-wrap .main__leader--box .main__leader--price {
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.beauty .main .container .main__item .main__leader .main__leader--box-wrap .main__leader--box a {
+  letter-spacing: 0.7px;
+  padding: 10px 58px;
+  border-radius: 40px;
+  border: 2px solid #f13c6e;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f13c6e;
+  text-decoration: none;
+  cursor: pointer;
+}
+.beauty .main .container .main__item .main__leader--prim {
+  padding-bottom: 80px;
+}
+.beauty .main .container .main__item .main__stand {
+  padding-bottom: 100px;
+  gap: 30px;
+  display: flex;
+}
+.beauty .main .container .main__item .main__stand .main__stand--item {
+  width: 50%;
+  padding: 35px 4% 35px 3.5%;
+  background-color: #f13c6e;
+  display: flex;
+  align-items: center;
+}
+.beauty .main .container .main__item .main__stand .main__stand--item .main__stand--item--box {
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.beauty .main .container .main__item .main__stand .main__stand--item .main__stand--item--box h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.beauty .main .container .main__item .main__stand .main__stand--item .main__stand--item--box span {
+  width: 75%;
+  padding: 25px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+.beauty .main .container .main__item .main__stand .main__stand--item .main__stand--item--box form input {
+  padding: 9px 30px 9px 25px;
+  border-radius: 30px;
+  border-style: none;
+  outline: 0;
+  font-size: 14px;
+}
+.beauty .main .container .main__item .main__stand .main__stand--item .main__stand--item--box a {
+  padding: 10px 58px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f13c6e;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  width: -moz-min-content;
+  width: min-content;
+}
+.beauty .main .container .main__item .main__stand .main__stand--item .main__stand--img--prim img {
+  width: 100%;
+}
+.beauty .main .container .main__item .main__stand .main__stand--item .main__stand--img--addit img {
+  width: 100%;
+}
+.beauty .main .container .main__item .main__stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+.beauty .main .container .main__item .main__stack .main__stack--img-wrap {
+  width: 25%;
+  padding: 35px 6%;
+  border: 1px solid #EFEFEF;
+  background-color: #fff;
+}
+.beauty .main .container .main__item .main__stack .main__stack--img-wrap img {
+  width: 100%;
 }
 
 .footer .footer__menu-wrap {
@@ -151,6 +311,8 @@ body {
   font-size: 14px;
   color: #000;
   background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 .footer .footer__privacy-wrap {
   background-color: #EFEFEF;

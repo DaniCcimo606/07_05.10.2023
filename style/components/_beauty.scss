@@ -1,0 +1,151 @@
+.beauty {
+    .main {
+        background-color: $secondary-color;
+        .main__item {
+            .main__hero {
+                position: relative;
+                img {
+
+                }
+                .main__hero--box {
+                    width: 15%;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    top: 50%;
+                    left: 21%;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        font-size: 48px;
+                        color: $light;
+                    }
+                    span {
+                        padding: 50px 0 30px 0;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: $light;
+                    }
+                    a {
+                        width: min-content;
+                        letter-spacing: .7px;
+                        @include button($light, $light, $primary-color);
+                    }
+                }
+            }
+        }
+        .container {
+            .main__item {
+                .main__leader {
+                    padding-bottom: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        padding: 80px 0 40px 0;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                    .main__leader--box-wrap {
+                        gap: 30px;
+                        display: flex;
+                        .main__leader--box {
+                            width: calc(100% / 4);
+                            padding: 25px 0;
+                            gap: 20px;
+                            background-color: $light;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            img {
+                                width: 125px;
+                                height: 165px;
+                            }
+                            .main__leader--description {
+                                padding: 0 30px;
+                                text-align: center;
+                                line-height: 20px;
+                            }
+                            .main__leader--price {
+                                font-size: 21px;
+                                font-weight: 500;
+                                letter-spacing: 2px;
+                            }
+                            a {
+                                letter-spacing: .7px;
+                                @include button($primary-color, $light, $primary-color);
+                            }
+                        }
+                    }
+                }
+                .main__leader--prim {
+                    padding-bottom: 80px;
+                }
+                .main__stand {
+                    padding-bottom: 100px;
+                    gap: 30px;
+                    display: flex;
+                    .main__stand--item {
+                        width: calc(100% / 2);
+                        padding: 35px 4% 35px 3.5%;
+                        background-color: $primary-color;
+                        display: flex;
+                        align-items: center;
+                        .main__stand--item--box {
+                            padding-right: 15%;
+                            display: flex;
+                            flex-direction: column;
+                            h2 {
+                                font-size: 18px;
+                                font-weight: 700;
+                                color: $light;
+                            }
+                            span {
+                                width: 75%;
+                                padding: 25px 0;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: $light;
+                            }
+                            form {
+                                input {
+                                    padding: 9px 30px 9px 25px;
+                                    border-radius: 30px;
+                                    border-style: none;
+                                    outline: 0;
+                                    font-size: 14px;
+                                }
+                            }
+                            a {
+                                @include button($light, $light, $primary-color);
+                                white-space: nowrap;
+                                width: min-content;
+                            }
+                        }
+                        .main__stand--img--prim {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .main__stand--img--addit {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .main__stack {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .main__stack--img-wrap {
+                        width: calc(100% / 4);
+                        padding: 35px 6%;
+                        border: 1px solid $secondary-color;
+                        background-color: $light;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
