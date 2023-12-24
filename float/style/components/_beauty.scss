@@ -5,28 +5,25 @@
             .main__hero {
                 position: relative;
                 overflow: hidden;
-                img {
-
-                }
                 .main__hero--box {
                     width: 15%;
                     transform: translateY(-50%);
                     position: absolute;
                     top: 50%;
                     left: 21%;
-                    display: flex;
-                    flex-direction: column;
                     h2 {
                         font-size: 48px;
                         color: $light;
                     }
                     span {
+                        display: block;
                         padding: 50px 0 30px 0;
                         font-size: 14px;
                         line-height: 20px;
                         color: $light;
                     }
                     a {
+                        display: block;
                         width: min-content;
                         letter-spacing: .7px;
                         @include button($light, $light, $primary-color);
@@ -38,34 +35,41 @@
             .main__item {
                 .main__leader {
                     padding-bottom: 100px;
-                    display: flex;
-                    flex-direction: column;
                     h2 {
                         padding: 80px 0 40px 0;
                         font-size: 24px;
                         font-weight: 700;
                     }
                     .main__leader--box-wrap {
-                        gap: 30px;
-                        display: flex;
+                        width: 100%;
+                        &::after {
+                            @include clear_fix;
+                        }
                         .main__leader--box {
-                            width: calc(100% / 4);
+                            width: calc((100% - 3% * 3) / 4);
+                            margin-right: 3%;
                             padding: 25px 0;
-                            gap: 20px;
+                            float: left;
                             background-color: $light;
-                            display: flex;
-                            align-items: center;
-                            flex-direction: column;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            * {
+                                display: block;
+                                width: fit-content;
+                                margin: 0 auto;
+                            }
                             img {
                                 width: 125px;
                                 height: 165px;
                             }
                             .main__leader--description {
-                                padding: 0 30px;
+                                padding: 20px 12%;
                                 text-align: center;
                                 line-height: 20px;
                             }
                             .main__leader--price {
+                                padding-bottom: 20px;
                                 font-size: 21px;
                                 font-weight: 500;
                                 letter-spacing: 2px;
@@ -82,18 +86,31 @@
                 }
                 .main__stand {
                     padding-bottom: 100px;
-                    gap: 30px;
-                    display: flex;
+                    &::after {
+                        @include clear_fix;
+                    }
                     .main__stand--item {
-                        width: calc(100% / 2);
+                        height: 220px;
+                        width: calc(97% / 2);
                         padding: 35px 4% 35px 3.5%;
                         background-color: $primary-color;
-                        display: flex;
-                        align-items: center;
+                        &:last-child {
+                            float: right;
+                        }
+                        &:first-child {
+                            float: left;
+                        }
+                        &::after {
+                            @include clear_fix;
+                        }
                         .main__stand--item--box {
+                            width: min-content;
                             padding-right: 15%;
-                            display: flex;
-                            flex-direction: column;
+                            float: left;
+                            * {
+                                display: block;
+                                width: fit-content;
+                            }
                             h2 {
                                 font-size: 18px;
                                 font-weight: 700;
@@ -122,25 +139,37 @@
                             }
                         }
                         .main__stand--img--prim {
+                            position: relative;
                             img {
-                                width: 100%;
+                                display: block;
+                                position: absolute;
+                                top: -15px;
+                                left: 60%;
+                                width: 37%;
                             }
                         }
                         .main__stand--img--addit {
+                            position: relative;
                             img {
-                                width: 100%;
+                                display: block;
+                                position: absolute;
+                                top: 20px;
+                                left: 53%;
+                                width: 45%;
                             }
                         }
                     }
                 }
                 .main__stack {
-                    display: flex;
-                    flex-wrap: wrap;
+                    &::after {
+                        @include clear_fix;
+                    }
                     .main__stack--img-wrap {
                         width: calc(100% / 4);
                         padding: 35px 6%;
                         border: 1px solid $secondary-color;
                         background-color: $light;
+                        float: left;
                         img {
                             width: 100%;
                         }

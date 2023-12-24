@@ -1,0 +1,108 @@
+.footer {
+    .footer__menu-wrap {
+        padding: 60px 0;
+        .footer__menu--list {
+            width: 100%;
+            &::after {
+                @include clear_fix;
+            }
+            .footer__menu--item {
+                width: calc((100% - 3% * 3) / 4);
+                margin-right: 3%;
+                float: left;
+                &:last-child {
+                    margin-right: 0;
+                }
+                h3 {
+                    padding: 0 0 30px 0;
+                    font-weight: 500;
+                    span {
+                    }
+                }
+                .footer__menu--list--inner {
+                    padding-top: 28px;
+                    border-top: 1px solid $secondary-color;
+                    .footer__menu--item--inner {
+                        margin: 15px 0;
+                        a {
+                            font-size: 12px;
+                            text-decoration: none;
+                            color: #828282;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer__connection-wrap {
+        .container {
+            &::after {
+                @include clear_fix;
+            }
+            .footer__social--list {
+                width: 50%;
+                padding: 38px 0;
+                font-size: 0;
+                float: left;
+                &::after {
+                    @include clear_fix;
+                }
+                .footer__social--item {
+                    margin-right: 4%;
+                    float: left;
+                    .footer__social--link {
+                        display: block;
+                        width: fit-content;
+                        padding: 13px;
+                        border-radius: 50px;
+                        border: 2px solid $primary-color;
+                        .footer__social--img {
+                            height: 22px;
+                        }
+                        .youtube {
+                            fill: $primary-color;
+                        }
+                    }
+                }
+            }
+            .footer__contacts {
+                width: 50%;
+                line-height: 128px;
+                float: left;
+                &::after {
+                    @include clear_fix;
+                }
+                form {
+                    margin: auto 0;
+                    float: right;
+                    .footer__contacts--btn {
+                        @include button($primary-color, $dark, $light);
+                    }
+                }
+                .footer__contacts--link {
+                    padding-right: 7%;
+                    margin: auto 0;
+                    text-decoration: none;
+                    float: right;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .footer__privacy-wrap {
+        background-color: $secondary-color;
+        .container {
+            padding: 25px 0;
+            &::after {
+                @include clear_fix;
+            }
+            .footer__privacy--text {
+                font-size: 12px;
+                color: #828282;
+                &:last-child {
+                    float: right;
+                }
+            }
+        }
+    }
+}

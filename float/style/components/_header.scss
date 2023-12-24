@@ -1,0 +1,99 @@
+.header {
+    .header__nav {
+        width: 100%;
+        background-color: $secondary-color;
+        .header__nav--list {
+            width: fit-content;
+            margin: 0 auto;
+            &::after {
+                @include clear_fix;
+            }
+            .header__nav--item {
+                float: left;
+                &:last-child {
+                    .header__nav--link {
+                        padding-right: 0;
+                    }
+                }
+                .header__nav--link {
+                    display: block;
+                    padding: 17px 30px 17px 0;
+                    text-decoration: none;
+                    color: #333333;
+                }
+            }
+        }
+    }
+    .header__item {
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .header__item {
+        .container {
+            .header__info {
+                font-size: 0;
+                &::after {
+                    @include clear_fix;
+                }
+                .header__info--item {
+                    float: left;
+                    &:last-child {
+                        padding: 20px 0;
+                        float: right;
+                    }
+                    &::after {
+                        @include clear_fix;
+                    }
+                    h1 {
+                        padding-left: 20px;
+                        float: right;
+                        font-size: 36px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        letter-spacing: 3.5px;
+                        line-height: 80px;
+                        color: $primary-color;
+                    }
+                    .header__info--link {
+                        line-height: 40px;
+                        padding-right: 40px;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #000;
+                    }
+                    form {
+                        float: right;
+                        .header__info--btn {
+                            @include button($primary-color, $dark, $light);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header__menu {
+        border-top: 1px solid $secondary-color;
+        .header__menu--list {
+            width: 36%;
+            margin: 0 auto;
+            text-align: center;
+            white-space: nowrap;
+            &::after {
+                @include clear_fix;
+            }
+            .header__menu--item {
+                padding: 30px 7% 30px 0;
+                float: left;
+                &:last-child {
+                    padding-right: 0;
+                }
+                .header__menu--link {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
