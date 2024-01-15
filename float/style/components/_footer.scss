@@ -1,29 +1,29 @@
 .footer {
-    .footer__menu-wrap {
+    .footer__item__menu--wrap {
         padding: 60px 0;
-        .footer__menu--list {
-            width: 100%;
-            &::after {
-                @include clear_fix;
-            }
-            .footer__menu--item {
-                width: calc((100% - 3% * 3) / 4);
-                margin-right: 3%;
-                float: left;
-                &:last-child {
-                    margin-right: 0;
-                }
+        .footer__item__menu--wrap__list {
+            display: flex;
+            gap: 30px;
+            .footer__item__menu--wrap__list__item {
+                display: flex;
+                flex-direction: column;
+                flex: 255px;
                 h3 {
+                    display: flex;
+                    flex-direction: column;
                     padding: 0 0 30px 0;
                     font-weight: 500;
                     span {
+                        flex: 23px;
                     }
                 }
-                .footer__menu--list--inner {
+                .footer__item__menu--wrap__list__item--inner {
+                    display: flex;
+                    flex-direction: column;
                     padding-top: 28px;
                     border-top: 1px solid $secondary-color;
-                    .footer__menu--item--inner {
-                        margin: 15px 0;
+                    .footer__item__menu--wrap__list__item--inner__item {
+                        flex: 28px;
                         a {
                             font-size: 12px;
                             text-decoration: none;
@@ -34,29 +34,22 @@
             }
         }
     }
-    .footer__connection-wrap {
+    .footer__item__connection--wrap {
         .container {
-            &::after {
-                @include clear_fix;
-            }
-            .footer__social--list {
-                width: 50%;
+            display: flex;
+            justify-content: space-between;
+            .footer__item__social__list {
+                display: flex;
                 padding: 38px 0;
                 font-size: 0;
-                float: left;
-                &::after {
-                    @include clear_fix;
-                }
-                .footer__social--item {
-                    margin-right: 4%;
-                    float: left;
-                    .footer__social--link {
+                gap: 20px;
+                .footer__item__social__list__item {
+                    .footer__item__social__list__item__link {
                         display: block;
-                        width: fit-content;
                         padding: 13px;
                         border-radius: 50px;
                         border: 2px solid $primary-color;
-                        .footer__social--img {
+                        .footer__item__social__list__item__link__img {
                             height: 22px;
                         }
                         .youtube {
@@ -65,43 +58,29 @@
                     }
                 }
             }
-            .footer__contacts {
-                width: 50%;
-                line-height: 128px;
-                float: left;
-                &::after {
-                    @include clear_fix;
-                }
-                form {
-                    margin: auto 0;
-                    float: right;
-                    .footer__contacts--btn {
-                        @include button($primary-color, $dark, $light);
-                    }
-                }
-                .footer__contacts--link {
-                    padding-right: 7%;
-                    margin: auto 0;
+            .footer__item__contacts {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                .footer__item__contacts__link {
                     text-decoration: none;
-                    float: right;
                     color: $dark;
+                }
+                .footer__item__contacts__btn {
+                    @include button($primary-color, $dark, $light)
                 }
             }
         }
     }
-    .footer__privacy-wrap {
+    .footer__item__privacy--wrap {
         background-color: $secondary-color;
         .container {
+            display: flex;
+            justify-content: space-between;
             padding: 25px 0;
-            &::after {
-                @include clear_fix;
-            }
-            .footer__privacy--text {
+            .footer__item__privacy__text {
                 font-size: 12px;
                 color: #828282;
-                &:last-child {
-                    float: right;
-                }
             }
         }
     }

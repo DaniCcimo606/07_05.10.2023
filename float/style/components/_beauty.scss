@@ -2,28 +2,31 @@
     .main {
         background-color: $secondary-color;
         .main__item {
-            .main__hero {
+            .main__item__hero {
                 position: relative;
                 overflow: hidden;
-                .main__hero--box {
+                img {
+
+                }
+                .main__item__hero__box {
                     width: 15%;
                     transform: translateY(-50%);
                     position: absolute;
                     top: 50%;
                     left: 21%;
+                    display: flex;
+                    flex-direction: column;
                     h2 {
                         font-size: 48px;
                         color: $light;
                     }
                     span {
-                        display: block;
                         padding: 50px 0 30px 0;
                         font-size: 14px;
                         line-height: 20px;
                         color: $light;
                     }
                     a {
-                        display: block;
                         width: min-content;
                         letter-spacing: .7px;
                         @include button($light, $light, $primary-color);
@@ -33,43 +36,36 @@
         }
         .container {
             .main__item {
-                .main__leader {
+                .main__item__leader {
                     padding-bottom: 100px;
+                    display: flex;
+                    flex-direction: column;
                     h2 {
                         padding: 80px 0 40px 0;
                         font-size: 24px;
                         font-weight: 700;
                     }
-                    .main__leader--box-wrap {
-                        width: 100%;
-                        &::after {
-                            @include clear_fix;
-                        }
-                        .main__leader--box {
-                            width: calc((100% - 3% * 3) / 4);
-                            margin-right: 3%;
+                    .main__item__leader__box {
+                        gap: 30px;
+                        display: flex;
+                        .main__item__leader__box__item {
+                            width: calc(100% / 4);
                             padding: 25px 0;
-                            float: left;
+                            gap: 20px;
                             background-color: $light;
-                            &:last-child {
-                                margin-right: 0;
-                            }
-                            * {
-                                display: block;
-                                width: fit-content;
-                                margin: 0 auto;
-                            }
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
                             img {
                                 width: 125px;
                                 height: 165px;
                             }
-                            .main__leader--description {
-                                padding: 20px 12%;
+                            .main__item__leader__box__item__description {
+                                padding: 0 30px;
                                 text-align: center;
                                 line-height: 20px;
                             }
-                            .main__leader--price {
-                                padding-bottom: 20px;
+                            .main__item__leader__box__item__price {
                                 font-size: 21px;
                                 font-weight: 500;
                                 letter-spacing: 2px;
@@ -81,36 +77,23 @@
                         }
                     }
                 }
-                .main__leader--prim {
+                .main__item__leader--prim {
                     padding-bottom: 80px;
                 }
-                .main__stand {
+                .main__item__stand {
                     padding-bottom: 100px;
-                    &::after {
-                        @include clear_fix;
-                    }
-                    .main__stand--item {
-                        height: 220px;
-                        width: calc(97% / 2);
+                    gap: 30px;
+                    display: flex;
+                    .main__item__stand__item {
+                        width: calc(100% / 2);
                         padding: 35px 4% 35px 3.5%;
                         background-color: $primary-color;
-                        &:last-child {
-                            float: right;
-                        }
-                        &:first-child {
-                            float: left;
-                        }
-                        &::after {
-                            @include clear_fix;
-                        }
-                        .main__stand--item--box {
-                            width: min-content;
+                        display: flex;
+                        align-items: center;
+                        .main__item__stand__item__box {
                             padding-right: 15%;
-                            float: left;
-                            * {
-                                display: block;
-                                width: fit-content;
-                            }
+                            display: flex;
+                            flex-direction: column;
                             h2 {
                                 font-size: 18px;
                                 font-weight: 700;
@@ -138,38 +121,26 @@
                                 width: min-content;
                             }
                         }
-                        .main__stand--img--prim {
-                            position: relative;
+                        .main__item__stand__item__img--prim {
                             img {
-                                display: block;
-                                position: absolute;
-                                top: -15px;
-                                left: 60%;
-                                width: 37%;
+                                width: 100%;
                             }
                         }
-                        .main__stand--img--addit {
-                            position: relative;
+                        .main__item__stand__item__img--addit {
                             img {
-                                display: block;
-                                position: absolute;
-                                top: 20px;
-                                left: 53%;
-                                width: 45%;
+                                width: 100%;
                             }
                         }
                     }
                 }
-                .main__stack {
-                    &::after {
-                        @include clear_fix;
-                    }
-                    .main__stack--img-wrap {
+                .main__item__stack {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .main__item__stack__img--wrap {
                         width: calc(100% / 4);
                         padding: 35px 6%;
                         border: 1px solid $secondary-color;
                         background-color: $light;
-                        float: left;
                         img {
                             width: 100%;
                         }

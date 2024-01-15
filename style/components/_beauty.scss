@@ -2,13 +2,13 @@
     .main {
         background-color: $secondary-color;
         .main__item {
-            .main__hero {
+            .main__item__hero {
                 position: relative;
                 overflow: hidden;
                 img {
 
                 }
-                .main__hero--box {
+                .main__item__hero__box {
                     width: 15%;
                     transform: translateY(-50%);
                     position: absolute;
@@ -36,7 +36,7 @@
         }
         .container {
             .main__item {
-                .main__leader {
+                .main__item__leader {
                     padding-bottom: 100px;
                     display: flex;
                     flex-direction: column;
@@ -45,10 +45,10 @@
                         font-size: 24px;
                         font-weight: 700;
                     }
-                    .main__leader--box-wrap {
+                    .main__item__leader__box {
                         gap: 30px;
                         display: flex;
-                        .main__leader--box {
+                        .main__item__leader__box__item {
                             width: calc(100% / 4);
                             padding: 25px 0;
                             gap: 20px;
@@ -60,12 +60,12 @@
                                 width: 125px;
                                 height: 165px;
                             }
-                            .main__leader--description {
+                            .main__item__leader__box__item__description {
                                 padding: 0 30px;
                                 text-align: center;
                                 line-height: 20px;
                             }
-                            .main__leader--price {
+                            .main__item__leader__box__item__price {
                                 font-size: 21px;
                                 font-weight: 500;
                                 letter-spacing: 2px;
@@ -77,20 +77,20 @@
                         }
                     }
                 }
-                .main__leader--prim {
+                .main__item__leader--prim {
                     padding-bottom: 80px;
                 }
-                .main__stand {
+                .main__item__stand {
                     padding-bottom: 100px;
                     gap: 30px;
                     display: flex;
-                    .main__stand--item {
+                    .main__item__stand__item {
                         width: calc(100% / 2);
                         padding: 35px 4% 35px 3.5%;
                         background-color: $primary-color;
                         display: flex;
                         align-items: center;
-                        .main__stand--item--box {
+                        .main__item__stand__item__box {
                             padding-right: 15%;
                             display: flex;
                             flex-direction: column;
@@ -121,22 +121,22 @@
                                 width: min-content;
                             }
                         }
-                        .main__stand--img--prim {
+                        .main__item__stand__item__img--prim {
                             img {
                                 width: 100%;
                             }
                         }
-                        .main__stand--img--addit {
+                        .main__item__stand__item__img--addit {
                             img {
                                 width: 100%;
                             }
                         }
                     }
                 }
-                .main__stack {
+                .main__item__stack {
                     display: flex;
                     flex-wrap: wrap;
-                    .main__stack--img-wrap {
+                    .main__item__stack__img--wrap {
                         width: calc(100% / 4);
                         padding: 35px 6%;
                         border: 1px solid $secondary-color;

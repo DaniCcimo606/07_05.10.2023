@@ -1,23 +1,16 @@
 .header {
-    .header__nav {
+    .header__item__nav {
+        display: flex;
         width: 100%;
+        justify-content: center;
         background-color: $secondary-color;
-        .header__nav--list {
-            width: fit-content;
-            margin: 0 auto;
-            &::after {
-                @include clear_fix;
-            }
-            .header__nav--item {
-                float: left;
-                &:last-child {
-                    .header__nav--link {
-                        padding-right: 0;
-                    }
-                }
-                .header__nav--link {
+        .header__item__nav__list {
+            display: flex;
+            gap: 30px;
+            .header__item__nav__list__item {
+                .header__item__nav__list__item__link {
                     display: block;
-                    padding: 17px 30px 17px 0;
+                    padding: 17px 0;
                     text-decoration: none;
                     color: #333333;
                 }
@@ -32,64 +25,44 @@
     }
     .header__item {
         .container {
-            .header__info {
-                font-size: 0;
-                &::after {
-                    @include clear_fix;
-                }
-                .header__info--item {
-                    float: left;
-                    &:last-child {
-                        padding: 20px 0;
-                        float: right;
-                    }
-                    &::after {
-                        @include clear_fix;
-                    }
+            .header__item__info {
+                display: flex;
+                justify-content: space-between;
+                .header__item__info__item {
+                    display: flex;
+                    align-items: center;
+                    font-size: 0;
                     h1 {
                         padding-left: 20px;
-                        float: right;
                         font-size: 36px;
                         text-transform: uppercase;
                         font-weight: 700;
                         letter-spacing: 3.5px;
-                        line-height: 80px;
                         color: $primary-color;
                     }
-                    .header__info--link {
-                        line-height: 40px;
+                    .header__item__info__item__link {
                         padding-right: 40px;
                         font-size: 16px;
                         text-decoration: none;
                         color: #000;
                     }
-                    form {
-                        float: right;
-                        .header__info--btn {
-                            @include button($primary-color, $dark, $light);
-                        }
+                    .header__item__info__item__btn {
+                        @include button($primary-color, $dark, $light);
                     }
                 }
             }
         }
     }
-    .header__menu {
+    .header__item__menu {
+        display: flex;
+        justify-content: center;
         border-top: 1px solid $secondary-color;
-        .header__menu--list {
-            width: 36%;
-            margin: 0 auto;
-            text-align: center;
-            white-space: nowrap;
-            &::after {
-                @include clear_fix;
-            }
-            .header__menu--item {
-                padding: 30px 7% 30px 0;
-                float: left;
-                &:last-child {
-                    padding-right: 0;
-                }
-                .header__menu--link {
+        .header__item__menu__list {
+            display: flex;
+            gap: 40px;
+            .header__item__menu__list__item {
+                padding: 30px 0;
+                .header__item__menu__list__item__link {
                     text-decoration: none;
                     color: #000;
                 }
