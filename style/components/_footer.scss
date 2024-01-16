@@ -28,6 +28,10 @@
                             font-size: 12px;
                             text-decoration: none;
                             color: #828282;
+                            &:hover {
+                                text-decoration-line: underline;
+                                text-underline-offset: 4px;
+                            }
                         }
                     }
                 }
@@ -67,7 +71,11 @@
                     color: $dark;
                 }
                 .footer__item__contacts__btn {
-                    @include button($primary-color, $dark, $light)
+                    @include button($primary-color, $dark, $light);
+                    &:hover {
+                        color: $light;
+                        background-color: $primary-color;
+                    }
                 }
             }
         }

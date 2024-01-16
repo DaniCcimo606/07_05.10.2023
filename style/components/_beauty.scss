@@ -5,9 +5,6 @@
             .main__item__hero {
                 position: relative;
                 overflow: hidden;
-                img {
-
-                }
                 .main__item__hero__box {
                     width: 15%;
                     transform: translateY(-50%);
@@ -29,7 +26,12 @@
                     a {
                         width: min-content;
                         letter-spacing: .7px;
+                        transition: all .3s;
                         @include button($light, $light, $primary-color);
+                        &:hover {
+                            color: $dark;
+                            background-color: $light;
+                        }
                     }
                 }
             }
@@ -72,7 +74,12 @@
                             }
                             a {
                                 letter-spacing: .7px;
+                                transition: all .3s;
                                 @include button($primary-color, $light, $primary-color);
+                                &:hover {
+                                    color: $dark;
+                                    background-color: $light;
+                                }
                             }
                         }
                     }
@@ -116,9 +123,14 @@
                                 }
                             }
                             a {
-                                @include button($light, $light, $primary-color);
-                                white-space: nowrap;
                                 width: min-content;
+                                white-space: nowrap;
+                                transition: all .3s;
+                                @include button($light, $light, $primary-color);
+                                &:hover {
+                                    color: $dark;
+                                    background-color: $light;
+                                }
                             }
                         }
                         .main__item__stand__item__img--prim {

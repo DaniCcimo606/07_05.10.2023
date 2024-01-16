@@ -26,7 +26,12 @@
                         display: block;
                         width: min-content;
                         letter-spacing: .7px;
+                        transition: all .3s;
                         @include button($light, $light, $primary-color);
+                        &:hover {
+                            color: $dark;
+                            background-color: $light;
+                        }
                     }
                 }
             }
@@ -76,7 +81,12 @@
                             }
                             a {
                                 letter-spacing: .7px;
+                                transition: all .3s;
                                 @include button($primary-color, $light, $primary-color);
+                                &:hover {
+                                    color: $dark;
+                                    background-color: $light;
+                                }
                             }
                         }
                     }
@@ -134,9 +144,14 @@
                                 }
                             }
                             a {
-                                @include button($light, $light, $primary-color);
                                 white-space: nowrap;
                                 width: min-content;
+                                transition: all .3s;
+                                @include button($light, $light, $primary-color);
+                                &:hover {
+                                    color: $dark;
+                                    background-color: $light;
+                                }
                             }
                         }
                         .main__item__stand__item__img--prim {

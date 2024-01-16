@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  transition: all 0.3s;
+}
+
 .header .header__item__nav {
   width: 100%;
   background-color: #EFEFEF;
@@ -34,6 +38,10 @@ body {
   padding: 17px 0;
   text-decoration: none;
   color: #333333;
+}
+.header .header__item__nav .header__item__nav__list .header__item__nav__list__item .header__item__nav__list__item__link:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
 }
 .header .header__item {
   margin-bottom: 20px;
@@ -78,6 +86,10 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+.header .header__item .container .header__item__info .header__item__info__item form .header__item__info__item__btn:hover {
+  background-color: #f13c6e;
+  color: #fff;
+}
 .header .header__item .container .header__item__info .header__item__info__item::after {
   content: "";
   clear: both;
@@ -115,6 +127,10 @@ body {
   text-decoration: none;
   color: #000;
 }
+.header .header__item__menu .header__item__menu__list .header__item__menu__list__item .header__item__menu__list__item__link:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
 
 .beauty .main {
   background-color: #EFEFEF;
@@ -146,6 +162,7 @@ body {
   width: -moz-min-content;
   width: min-content;
   letter-spacing: 0.7px;
+  transition: all 0.3s;
   padding: 10px 58px;
   border-radius: 40px;
   border: 2px solid #fff;
@@ -154,6 +171,10 @@ body {
   background-color: #f13c6e;
   text-decoration: none;
   cursor: pointer;
+}
+.beauty .main .main__item .main__item__hero .main__item__hero__box a:hover {
+  color: #000;
+  background-color: #fff;
 }
 .beauty .main .container .main__item .main__item__leader {
   padding-bottom: 100px;
@@ -205,6 +226,7 @@ body {
 }
 .beauty .main .container .main__item .main__item__leader .main__item__leader__box .main__item__leader__box__item a {
   letter-spacing: 0.7px;
+  transition: all 0.3s;
   padding: 10px 58px;
   border-radius: 40px;
   border: 2px solid #f13c6e;
@@ -213,6 +235,10 @@ body {
   background-color: #f13c6e;
   text-decoration: none;
   cursor: pointer;
+}
+.beauty .main .container .main__item .main__item__leader .main__item__leader__box .main__item__leader__box__item a:hover {
+  color: #000;
+  background-color: #fff;
 }
 .beauty .main .container .main__item .main__item__leader--prim {
   padding-bottom: 80px;
@@ -274,6 +300,10 @@ body {
   font-size: 14px;
 }
 .beauty .main .container .main__item .main__item__stand .main__item__stand__item .main__item__stand__item__box a {
+  white-space: nowrap;
+  width: -moz-min-content;
+  width: min-content;
+  transition: all 0.3s;
   padding: 10px 58px;
   border-radius: 40px;
   border: 2px solid #fff;
@@ -282,9 +312,10 @@ body {
   background-color: #f13c6e;
   text-decoration: none;
   cursor: pointer;
-  white-space: nowrap;
-  width: -moz-min-content;
-  width: min-content;
+}
+.beauty .main .container .main__item .main__item__stand .main__item__stand__item .main__item__stand__item__box a:hover {
+  color: #000;
+  background-color: #fff;
 }
 .beauty .main .container .main__item .main__item__stand .main__item__stand__item .main__item__stand__item__img--prim {
   position: absolute;
@@ -357,6 +388,10 @@ body {
   text-decoration: none;
   color: #828282;
 }
+.footer .footer__item__menu--wrap .footer__item__menu--wrap__list .footer__item__menu--wrap__list__item .footer__item__menu--wrap__list__item--inner .footer__item__menu--wrap__list__item--inner__item a:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
 .footer .footer__item__connection--wrap .container {
   padding: 38px 0;
 }
@@ -426,6 +461,10 @@ body {
   background-color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+.footer .footer__item__connection--wrap .container .footer__item__contacts form .footer__item__contacts__btn:hover {
+  color: #fff;
+  background-color: #f13c6e;
 }
 .footer .footer__item__privacy--wrap {
   background-color: #EFEFEF;

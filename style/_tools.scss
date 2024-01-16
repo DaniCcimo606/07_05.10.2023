@@ -14,6 +14,10 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    transition: all .3s;
+}
+
 @mixin button($primary-color, $dark, $light) {
     padding: 10px 58px;
     border-radius: 40px;
