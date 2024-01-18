@@ -1,10 +1,10 @@
 .footer {
-    .footer__item__menu--wrap {
+    .popular {
         padding: 60px 0;
-        .footer__item__menu--wrap__list {
+        .popular__list {
             display: flex;
             gap: 30px;
-            .footer__item__menu--wrap__list__item {
+            .popular__item {
                 display: flex;
                 flex-direction: column;
                 flex: 255px;
@@ -17,12 +17,12 @@
                         flex: 23px;
                     }
                 }
-                .footer__item__menu--wrap__list__item--inner {
+                .popular__list--inner {
                     display: flex;
                     flex-direction: column;
                     padding-top: 28px;
                     border-top: 1px solid $secondary-color;
-                    .footer__item__menu--wrap__list__item--inner__item {
+                    .popular__item--inner {
                         flex: 28px;
                         a {
                             font-size: 12px;
@@ -38,22 +38,22 @@
             }
         }
     }
-    .footer__item__connection--wrap {
+    .contacts {
         .container {
             display: flex;
             justify-content: space-between;
-            .footer__item__social__list {
+            .socials {
                 display: flex;
                 padding: 38px 0;
                 font-size: 0;
                 gap: 20px;
-                .footer__item__social__list__item {
-                    .footer__item__social__list__item__link {
+                .socials__item {
+                    .socials__link {
                         display: block;
                         padding: 13px;
                         border-radius: 50px;
                         border: 2px solid $primary-color;
-                        .footer__item__social__list__item__link__img {
+                        .socials__img {
                             height: 22px;
                         }
                         .youtube {
@@ -62,15 +62,15 @@
                     }
                 }
             }
-            .footer__item__contacts {
+            .callback {
                 display: flex;
                 align-items: center;
                 gap: 40px;
-                .footer__item__contacts__link {
+                .callback__link {
                     text-decoration: none;
                     color: $dark;
                 }
-                .footer__item__contacts__btn {
+                .callback__btn {
                     @include button($primary-color, $dark, $light);
                     &:hover {
                         color: $light;
@@ -80,13 +80,13 @@
             }
         }
     }
-    .footer__item__privacy--wrap {
+    .privacy {
         background-color: $secondary-color;
         .container {
             display: flex;
             justify-content: space-between;
             padding: 25px 0;
-            .footer__item__privacy__text {
+            .privacy__text {
                 font-size: 12px;
                 color: #828282;
             }

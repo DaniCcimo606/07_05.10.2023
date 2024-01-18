@@ -2,10 +2,10 @@
     .main {
         background-color: $secondary-color;
         .main__item {
-            .main__item__hero {
+            .hero {
                 position: relative;
                 overflow: hidden;
-                .main__item__hero__box {
+                .hero__cont {
                     width: 15%;
                     transform: translateY(-50%);
                     position: absolute;
@@ -38,19 +38,19 @@
         }
         .container {
             .main__item {
-                .main__item__leader {
+                .goods {
                     padding-bottom: 100px;
                     h2 {
                         padding: 80px 0 40px 0;
                         font-size: 24px;
                         font-weight: 700;
                     }
-                    .main__item__leader__box {
+                    .goods__list {
                         width: fit-content;
                         &::after{
                             @include clear_fix;
                         }
-                        .main__item__leader__box__item {
+                        .goods__item {
                             width: calc(100% / 4 - 21px);
                             margin-right: 28px;
                             padding: 25px 0;
@@ -64,16 +64,16 @@
                                 width: fit-content;
                                 margin: 0 auto;
                             }
-                            img {
+                            .goods__img {
                                 width: 125px;
                                 height: 165px;
                             }
-                            .main__item__leader__box__item__description {
+                            .goods__desc {
                                 padding: 20px 30px;
                                 text-align: center;
                                 line-height: 20px;
                             }
-                            .main__item__leader__box__item__price {
+                            .goods__price {
                                 margin-bottom: 20px;
                                 font-size: 21px;
                                 font-weight: 500;
@@ -91,15 +91,15 @@
                         }
                     }
                 }
-                .main__item__leader--prim {
+                .viewed {
                     padding-bottom: 80px;
                 }
-                .main__item__stand {
+                .services {
                     padding-bottom: 100px;
                     &::after {
                         @include clear_fix;
                     }
-                    .main__item__stand__item {
+                    .services__item {
                         position: relative;
                         width: calc(100% / 2 - 14px);
                         padding: 35px 4% 35px 3.5%;
@@ -114,7 +114,7 @@
                         &:last-child {
                             float: right;
                         }
-                        .main__item__stand__item__box {
+                        .services__cont {
                             width: fit-content;
                             padding-right: 15%;
                             float: left;
@@ -154,7 +154,7 @@
                                 }
                             }
                         }
-                        .main__item__stand__item__img--prim {
+                        .services__img {
                             position: absolute;
                             right: 40px;
                             img {
@@ -162,7 +162,7 @@
                                 height: auto;
                             }
                         }
-                        .main__item__stand__item__img--addit {
+                        .services__img--mod {
                             position: absolute;
                             right: 40px;
                             padding-top: 23px;
@@ -173,11 +173,11 @@
                         }
                     }
                 }
-                .main__item__stack {
+                .sponsors {
                     &::after {
                         @include clear_fix;
                     }
-                    .main__item__stack__img--wrap {
+                    .sponsors__logo {
                         width: calc(100% / 4);
                         padding: 35px 6%;
                         border: 1px solid $secondary-color;
